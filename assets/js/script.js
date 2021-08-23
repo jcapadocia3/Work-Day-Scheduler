@@ -10,7 +10,26 @@ function setTime() {
 
 setTime();
 
-function eventBackground() {
-    var d = new Date();
-    var hour = d.getHours();
-}
+var save = document.getElementById("save1");
+var entry = document.getElementById("colorCoded");
+
+save.addEventListener("submit", (event) => {
+  event.preventDefault();
+  storeEntry();
+});
+
+function storeEntry() {
+  var new_data = document.getElementById("colorCoded").textContent;
+
+  if (localStorage.getItem("event") == null) {
+    localStorage.setItem("event", "[]");
+  }
+
+  localStorage.setItem("event", new_data);
+};
+
+function pullEvent() {
+  var getEntry = localStorage.getItem("event");
+  entry.textContent = getEntry;
+};
+pullEvent();
