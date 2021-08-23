@@ -94,45 +94,96 @@ save9.addEventListener("submit", (event) => {
   storeEntry();
 });
 
+// function storeEntry() {
+//   var new_data1 = document.getElementById("colorCoded1").textContent;
+//   localStorage.setItem("event1", new_data1);
+//   var new_data2 = document.getElementById("colorCoded2").textContent;
+//   localStorage.setItem("event2", new_data2);
+//   var new_data3 = document.getElementById("colorCoded3").textContent;
+//   localStorage.setItem("event3", new_data3);
+//   var new_data4 = document.getElementById("colorCoded4").textContent;
+//   localStorage.setItem("event4", new_data4);
+//   var new_data5 = document.getElementById("colorCoded5").textContent;
+//   localStorage.setItem("event5", new_data5);
+//   var new_data6 = document.getElementById("colorCoded6").textContent;
+//   localStorage.setItem("event6", new_data6);
+//   var new_data7 = document.getElementById("colorCoded7").textContent;
+//   localStorage.setItem("event7", new_data7);
+//   var new_data8 = document.getElementById("colorCoded8").textContent;
+//   localStorage.setItem("event8", new_data8);
+//   var new_data9 = document.getElementById("colorCoded9").textContent;
+//   localStorage.setItem("event9", new_data9);
+// };
+
+var new_data1 = document.getElementById("colorCoded1").textContent;
+var new_data2 = document.getElementById("colorCoded2").textContent;
+var new_data3 = document.getElementById("colorCoded3").textContent;
+var new_data4 = document.getElementById("colorCoded4").textContent;
+var new_data5 = document.getElementById("colorCoded5").textContent;
+var new_data6 = document.getElementById("colorCoded6").textContent;
+var new_data7 = document.getElementById("colorCoded7").textContent;
+var new_data8 = document.getElementById("colorCoded8").textContent;
+var new_data9 = document.getElementById("colorCoded9").textContent;
+
 function storeEntry() {
-  var new_data1 = document.getElementById("colorCoded1").textContent;
-  localStorage.setItem("event1", new_data1);
-  var new_data2 = document.getElementById("colorCoded2").textContent;
-  localStorage.setItem("event2", new_data2);
-  var new_data3 = document.getElementById("colorCoded3").textContent;
-  localStorage.setItem("event3", new_data3);
-  var new_data4 = document.getElementById("colorCoded4").textContent;
-  localStorage.setItem("event4", new_data4);
-  var new_data5 = document.getElementById("colorCoded5").textContent;
-  localStorage.setItem("event5", new_data5);
-  var new_data6 = document.getElementById("colorCoded6").textContent;
-  localStorage.setItem("event6", new_data6);
-  var new_data7 = document.getElementById("colorCoded7").textContent;
-  localStorage.setItem("event7", new_data7);
-  var new_data8 = document.getElementById("colorCoded8").textContent;
-  localStorage.setItem("event8", new_data8);
-  var new_data9 = document.getElementById("colorCoded9").textContent;
-  localStorage.setItem("event9", new_data9);
+  var storeEvents = [new_data1, new_data2, new_data3, new_data4, new_data5, new_data6, new_data7, new_data8, new_data9];
+  for(i = 0; i < storeEvents.length; i++) {
+    localStorage.setItem("event1", new_data1);
+    localStorage.setItem("event2", new_data2);
+    localStorage.setItem("event3", new_data3);
+    localStorage.setItem("event4", new_data4);
+    localStorage.setItem("event5", new_data5);
+    localStorage.setItem("event6", new_data6);
+    localStorage.setItem("event7", new_data7);
+    localStorage.setItem("event8", new_data8);
+    localStorage.setItem("event9", new_data9);
+  }
 };
 
-function pullEvent() {
-  var getEntry1 = localStorage.getItem("event1");
+// function pullEvent() {
+//   var getEntry1 = localStorage.getItem("event1");
+//   entry1.textContent = getEntry1;
+//   var getEntry2 = localStorage.getItem("event2");
+//   entry2.textContent = getEntry2;
+//   var getEntry3 = localStorage.getItem("event3");
+//   entry3.textContent = getEntry3;
+//   var getEntry4 = localStorage.getItem("event4");
+//   entry4.textContent = getEntry4;
+//   var getEntry5 = localStorage.getItem("event5");
+//   entry5.textContent = getEntry5;
+//   var getEntry6 = localStorage.getItem("event6");
+//   entry6.textContent = getEntry6;
+//   var getEntry7 = localStorage.getItem("event7");
+//   entry7.textContent = getEntry7;
+//   var getEntry8 = localStorage.getItem("event8");
+//   entry8.textContent = getEntry8;
+//   var getEntry9 = localStorage.getItem("event9");
+//   entry9.textContent = getEntry9;
+// }
+// pullEvent();
+
+
+
+var getEntry1 = localStorage.getItem("event1");
+var getEntry2 = localStorage.getItem("event2");
+var getEntry3 = localStorage.getItem("event3");
+var getEntry4 = localStorage.getItem("event4");
+var getEntry5 = localStorage.getItem("event5");
+var getEntry6 = localStorage.getItem("event6");
+var getEntry7 = localStorage.getItem("event7");
+var getEntry8 = localStorage.getItem("event8");
+var getEntry9 = localStorage.getItem("event9");
+
+
+var pullEvents = [getEntry1, getEntry2, getEntry3, getEntry4, getEntry5, getEntry6, getEntry7, getEntry8, getEntry9];
+for(i = 0; i < pullEvents.length; i++) {
   entry1.textContent = getEntry1;
-  var getEntry2 = localStorage.getItem("event2");
   entry2.textContent = getEntry2;
-  var getEntry3 = localStorage.getItem("event3");
   entry3.textContent = getEntry3;
-  var getEntry4 = localStorage.getItem("event4");
   entry4.textContent = getEntry4;
-  var getEntry5 = localStorage.getItem("event5");
   entry5.textContent = getEntry5;
-  var getEntry6 = localStorage.getItem("event6");
   entry6.textContent = getEntry6;
-  var getEntry7 = localStorage.getItem("event7");
   entry7.textContent = getEntry7;
-  var getEntry8 = localStorage.getItem("event8");
   entry8.textContent = getEntry8;
-  var getEntry9 = localStorage.getItem("event9");
   entry9.textContent = getEntry9;
-}
-pullEvent();
+};
