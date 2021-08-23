@@ -70,6 +70,12 @@ body {
     transition: all 0.3s ease-in-out;
   }
   
+  .saveIcon {
+    color: white;
+    background-color: #06aed5;
+    border: none;
+  }
+
   #colorCoded1,
   #colorCoded2,
   #colorCoded3,
