@@ -1,3 +1,4 @@
+// Begin code and function to display a live, running, date/time on the web page
 var todaysDate = moment().format("MMM Do, YYYY, hh:mm:ss");
 $("#currentDay").text(todaysDate);
 
@@ -10,6 +11,9 @@ function setTime() {
 
 setTime();
 
+// Begin conditional statements to change the background color of the
+// timeblocks based on current, live, time of day (specifically based on hour of day)
+// Time block background color will be determined by past, present, or future timeframes
 var timeNow = new Date().getHours();
 
 function colorTime() {
@@ -114,6 +118,9 @@ function colorTime() {
 };
 colorTime()
 
+// Begin code to set EventListeners
+// for each form submission to save user entries
+
 // 9AM event
 var save1 = document.getElementById("save1");
 save1.addEventListener("submit", (event) => {
@@ -177,6 +184,8 @@ save9.addEventListener("submit", (event) => {
   storeEntry();
 });
 
+// Begin code to store user entries on local storage
+// after Event Listeners are triggered
 var entry1 = document.getElementById("colorCoded1");
 var entry2 = document.getElementById("colorCoded2");
 var entry3 = document.getElementById("colorCoded3");
@@ -233,6 +242,8 @@ function storeEntry() {
 //   }
 // };
 
+// Begin code to pull information from local storage
+// for user entries to persist
 var getEntry1 = localStorage.getItem("event1");
 var getEntry2 = localStorage.getItem("event2");
 var getEntry3 = localStorage.getItem("event3");
@@ -256,25 +267,3 @@ for(i = 0; i < pullEvents.length; i++) {
   entry8.textContent = getEntry8;
   entry9.textContent = getEntry9;
 };
-
-// function pullEvent() {
-//   var getEntry1 = localStorage.getItem("event1");
-//   entry1.textContent = getEntry1;
-//   var getEntry2 = localStorage.getItem("event2");
-//   entry2.textContent = getEntry2;
-//   var getEntry3 = localStorage.getItem("event3");
-//   entry3.textContent = getEntry3;
-//   var getEntry4 = localStorage.getItem("event4");
-//   entry4.textContent = getEntry4;
-//   var getEntry5 = localStorage.getItem("event5");
-//   entry5.textContent = getEntry5;
-//   var getEntry6 = localStorage.getItem("event6");
-//   entry6.textContent = getEntry6;
-//   var getEntry7 = localStorage.getItem("event7");
-//   entry7.textContent = getEntry7;
-//   var getEntry8 = localStorage.getItem("event8");
-//   entry8.textContent = getEntry8;
-//   var getEntry9 = localStorage.getItem("event9");
-//   entry9.textContent = getEntry9;
-// }
-// pullEvent();
