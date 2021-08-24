@@ -18,15 +18,103 @@ var timeNow = new Date().getHours();
 
 function colorTime() {
   if (timeNow < 9) {
-    $("#colorCoded1").addClass("past");
+    $("#colorCoded1").addClass("future");
     console.log("past");
  } else if (timeNow == 9) {
     $("#colorCoded1").addClass("present");
     console.log("present");
  } else if (timeNow > 9) {
-    $("#colorCoded1").addClass("future");
+    $("#colorCoded1").addClass("past");
     console.log("future");
  } 
+ 
+ if (timeNow < 10) {
+    $("#colorCoded2").addClass("future");
+    console.log("past");
+ } else if (timeNow == 10) {
+    $("#colorCoded2").addClass("present");
+    console.log("present");
+ } else if (timeNow > 10) {
+    $("#colorCoded2").addClass("past");
+    console.log("future");
+ }
+
+ if (timeNow < 11) {
+    $("#colorCoded3").addClass("future");
+    console.log("past");
+ } else if (timeNow == 11) {
+    $("#colorCoded3").addClass("present");
+    console.log("present");
+ } else if (timeNow > 11) {
+    $("#colorCoded3").addClass("past");
+    console.log("future");
+ }
+
+ if (timeNow < 12) {
+    $("#colorCoded4").addClass("future");
+    console.log("past");
+ } else if (timeNow == 12) {
+    $("#colorCoded4").addClass("present");
+    console.log("present");
+ } else if (timeNow > 12) {
+    $("#colorCoded4").addClass("past");
+    console.log("future");
+ }
+
+ if (timeNow < 13) {
+    $("#colorCoded5").addClass("future");
+    console.log("past");
+ } else if (timeNow == 13) {
+    $("#colorCoded5").addClass("present");
+    console.log("present");
+ } else if (timeNow > 13) {
+    $("#colorCoded5").addClass("past");
+    console.log("future");
+ }
+
+ if (timeNow < 14) {
+    $("#colorCoded6").addClass("future");
+    console.log("past");
+ } else if (timeNow == 14) {
+    $("#colorCoded6").addClass("present");
+    console.log("present");
+ } else if (timeNow > 14) {
+    $("#colorCoded6").addClass("past");
+    console.log("future");
+ }
+
+ if (timeNow < 15) {
+    $("#colorCoded7").addClass("future");
+    console.log("past");
+ } else if (timeNow == 15) {
+    $("#colorCoded7").addClass("present");
+    console.log("present");
+ } else if (timeNow > 15) {
+    $("#colorCoded7").addClass("past");
+    console.log("future");
+ }
+
+ if (timeNow < 16) {
+    $("#colorCoded8").addClass("future");
+    console.log("past");
+ } else if (timeNow == 16) {
+    $("#colorCoded8").addClass("present");
+    console.log("present");
+ } else if (timeNow > 16) {
+    $("#colorCoded8").addClass("past");
+    console.log("future");
+ }
+
+ if (timeNow < 17) {
+    $("#colorCoded9").addClass("future");
+    console.log("past");
+ } else if (timeNow == 17) {
+    $("#colorCoded9").addClass("present");
+    console.log("present");
+ } else if (timeNow > 17) {
+    $("#colorCoded9").addClass("past");
+    console.log("future");
+ }
 };
 colorTime()
 
