@@ -10,10 +10,6 @@ function setTime() {
 
 setTime();
 
-
-
-
-
 var timeNow = new Date().getHours();
 
 function colorTime() {
@@ -118,13 +114,8 @@ function colorTime() {
 };
 colorTime()
 
-
-
-
 // 9AM event
 var save1 = document.getElementById("save1");
-var entry1 = document.getElementById("colorCoded1");
-
 save1.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -132,8 +123,6 @@ save1.addEventListener("submit", (event) => {
 
 // 10AM event
 var save2 = document.getElementById("save2");
-var entry2 = document.getElementById("colorCoded2");
-
 save2.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -141,8 +130,6 @@ save2.addEventListener("submit", (event) => {
 
 // 11AM event
 var save3 = document.getElementById("save3");
-var entry3 = document.getElementById("colorCoded3");
-
 save3.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -150,8 +137,6 @@ save3.addEventListener("submit", (event) => {
 
 // 12PM event
 var save4 = document.getElementById("save4");
-var entry4 = document.getElementById("colorCoded4");
-
 save4.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -159,8 +144,6 @@ save4.addEventListener("submit", (event) => {
 
 // 1PM event
 var save5 = document.getElementById("save5");
-var entry5 = document.getElementById("colorCoded5");
-
 save5.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -168,8 +151,6 @@ save5.addEventListener("submit", (event) => {
 
 // 2PM event
 var save6 = document.getElementById("save6");
-var entry6 = document.getElementById("colorCoded6");
-
 save6.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -177,8 +158,6 @@ save6.addEventListener("submit", (event) => {
 
 // 3PM event
 var save7 = document.getElementById("save7");
-var entry7 = document.getElementById("colorCoded7");
-
 save7.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -186,8 +165,6 @@ save7.addEventListener("submit", (event) => {
 
 // 4PM event
 var save8 = document.getElementById("save8");
-var entry8 = document.getElementById("colorCoded8");
-
 save8.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
@@ -195,31 +172,39 @@ save8.addEventListener("submit", (event) => {
 
 // 5PM event
 var save9 = document.getElementById("save9");
-var entry9 = document.getElementById("colorCoded9");
-
 save9.addEventListener("submit", (event) => {
   event.preventDefault();
   storeEntry();
 });
 
+var entry1 = document.getElementById("colorCoded1");
+var entry2 = document.getElementById("colorCoded2");
+var entry3 = document.getElementById("colorCoded3");
+var entry4 = document.getElementById("colorCoded4");
+var entry5 = document.getElementById("colorCoded5");
+var entry6 = document.getElementById("colorCoded6");
+var entry7 = document.getElementById("colorCoded7");
+var entry8 = document.getElementById("colorCoded8");
+var entry9 = document.getElementById("colorCoded9");
+
 function storeEntry() {
-  var new_data1 = document.getElementById("colorCoded1").textContent;
+  var new_data1 = entry1.textContent;
   localStorage.setItem("event1", new_data1);
-  var new_data2 = document.getElementById("colorCoded2").textContent;
+  var new_data2 = entry2.textContent;
   localStorage.setItem("event2", new_data2);
-  var new_data3 = document.getElementById("colorCoded3").textContent;
+  var new_data3 = entry3.textContent;
   localStorage.setItem("event3", new_data3);
-  var new_data4 = document.getElementById("colorCoded4").textContent;
+  var new_data4 = entry4.textContent;
   localStorage.setItem("event4", new_data4);
-  var new_data5 = document.getElementById("colorCoded5").textContent;
+  var new_data5 = entry5.textContent;
   localStorage.setItem("event5", new_data5);
-  var new_data6 = document.getElementById("colorCoded6").textContent;
+  var new_data6 = entry6.textContent;
   localStorage.setItem("event6", new_data6);
-  var new_data7 = document.getElementById("colorCoded7").textContent;
+  var new_data7 = entry7.textContent;
   localStorage.setItem("event7", new_data7);
-  var new_data8 = document.getElementById("colorCoded8").textContent;
+  var new_data8 = entry8.textContent;
   localStorage.setItem("event8", new_data8);
-  var new_data9 = document.getElementById("colorCoded9").textContent;
+  var new_data9 = entry9.textContent;
   localStorage.setItem("event9", new_data9);
 };
 
@@ -248,30 +233,6 @@ function storeEntry() {
 //   }
 // };
 
-// function pullEvent() {
-//   var getEntry1 = localStorage.getItem("event1");
-//   entry1.textContent = getEntry1;
-//   var getEntry2 = localStorage.getItem("event2");
-//   entry2.textContent = getEntry2;
-//   var getEntry3 = localStorage.getItem("event3");
-//   entry3.textContent = getEntry3;
-//   var getEntry4 = localStorage.getItem("event4");
-//   entry4.textContent = getEntry4;
-//   var getEntry5 = localStorage.getItem("event5");
-//   entry5.textContent = getEntry5;
-//   var getEntry6 = localStorage.getItem("event6");
-//   entry6.textContent = getEntry6;
-//   var getEntry7 = localStorage.getItem("event7");
-//   entry7.textContent = getEntry7;
-//   var getEntry8 = localStorage.getItem("event8");
-//   entry8.textContent = getEntry8;
-//   var getEntry9 = localStorage.getItem("event9");
-//   entry9.textContent = getEntry9;
-// }
-// pullEvent();
-
-
-
 var getEntry1 = localStorage.getItem("event1");
 var getEntry2 = localStorage.getItem("event2");
 var getEntry3 = localStorage.getItem("event3");
@@ -295,3 +256,25 @@ for(i = 0; i < pullEvents.length; i++) {
   entry8.textContent = getEntry8;
   entry9.textContent = getEntry9;
 };
+
+// function pullEvent() {
+//   var getEntry1 = localStorage.getItem("event1");
+//   entry1.textContent = getEntry1;
+//   var getEntry2 = localStorage.getItem("event2");
+//   entry2.textContent = getEntry2;
+//   var getEntry3 = localStorage.getItem("event3");
+//   entry3.textContent = getEntry3;
+//   var getEntry4 = localStorage.getItem("event4");
+//   entry4.textContent = getEntry4;
+//   var getEntry5 = localStorage.getItem("event5");
+//   entry5.textContent = getEntry5;
+//   var getEntry6 = localStorage.getItem("event6");
+//   entry6.textContent = getEntry6;
+//   var getEntry7 = localStorage.getItem("event7");
+//   entry7.textContent = getEntry7;
+//   var getEntry8 = localStorage.getItem("event8");
+//   entry8.textContent = getEntry8;
+//   var getEntry9 = localStorage.getItem("event9");
+//   entry9.textContent = getEntry9;
+// }
+// pullEvent();
