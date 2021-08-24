@@ -85,6 +85,6 @@ body {
   #colorCoded7,
   #colorCoded8,
   #colorCoded9 {
-    background-color: seagreen;
+    /* background-color: seagreen; */
     width: 900px;
   }

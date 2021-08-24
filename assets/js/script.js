@@ -13,6 +13,26 @@ setTime();
 
 
 
+
+var timeNow = new Date().getHours();
+
+function colorTime() {
+  if (timeNow < 9) {
+    $("#colorCoded1").addClass("past");
+    console.log("past");
+ } else if (timeNow == 9) {
+    $("#colorCoded1").addClass("present");
+    console.log("present");
+ } else if (timeNow > 9) {
+    $("#colorCoded1").addClass("future");
+    console.log("future");
+ } 
+};
+colorTime()
+
+
+
+
 // 9AM event
 var save1 = document.getElementById("save1");
 var entry1 = document.getElementById("colorCoded1");
@@ -94,51 +114,51 @@ save9.addEventListener("submit", (event) => {
   storeEntry();
 });
 
-// function storeEntry() {
-//   var new_data1 = document.getElementById("colorCoded1").textContent;
-//   localStorage.setItem("event1", new_data1);
-//   var new_data2 = document.getElementById("colorCoded2").textContent;
-//   localStorage.setItem("event2", new_data2);
-//   var new_data3 = document.getElementById("colorCoded3").textContent;
-//   localStorage.setItem("event3", new_data3);
-//   var new_data4 = document.getElementById("colorCoded4").textContent;
-//   localStorage.setItem("event4", new_data4);
-//   var new_data5 = document.getElementById("colorCoded5").textContent;
-//   localStorage.setItem("event5", new_data5);
-//   var new_data6 = document.getElementById("colorCoded6").textContent;
-//   localStorage.setItem("event6", new_data6);
-//   var new_data7 = document.getElementById("colorCoded7").textContent;
-//   localStorage.setItem("event7", new_data7);
-//   var new_data8 = document.getElementById("colorCoded8").textContent;
-//   localStorage.setItem("event8", new_data8);
-//   var new_data9 = document.getElementById("colorCoded9").textContent;
-//   localStorage.setItem("event9", new_data9);
-// };
-
-var new_data1 = document.getElementById("colorCoded1").textContent;
-var new_data2 = document.getElementById("colorCoded2").textContent;
-var new_data3 = document.getElementById("colorCoded3").textContent;
-var new_data4 = document.getElementById("colorCoded4").textContent;
-var new_data5 = document.getElementById("colorCoded5").textContent;
-var new_data6 = document.getElementById("colorCoded6").textContent;
-var new_data7 = document.getElementById("colorCoded7").textContent;
-var new_data8 = document.getElementById("colorCoded8").textContent;
-var new_data9 = document.getElementById("colorCoded9").textContent;
-
 function storeEntry() {
-  var storeEvents = [new_data1, new_data2, new_data3, new_data4, new_data5, new_data6, new_data7, new_data8, new_data9];
-  for(i = 0; i < storeEvents.length; i++) {
-    localStorage.setItem("event1", new_data1);
-    localStorage.setItem("event2", new_data2);
-    localStorage.setItem("event3", new_data3);
-    localStorage.setItem("event4", new_data4);
-    localStorage.setItem("event5", new_data5);
-    localStorage.setItem("event6", new_data6);
-    localStorage.setItem("event7", new_data7);
-    localStorage.setItem("event8", new_data8);
-    localStorage.setItem("event9", new_data9);
-  }
+  var new_data1 = document.getElementById("colorCoded1").textContent;
+  localStorage.setItem("event1", new_data1);
+  var new_data2 = document.getElementById("colorCoded2").textContent;
+  localStorage.setItem("event2", new_data2);
+  var new_data3 = document.getElementById("colorCoded3").textContent;
+  localStorage.setItem("event3", new_data3);
+  var new_data4 = document.getElementById("colorCoded4").textContent;
+  localStorage.setItem("event4", new_data4);
+  var new_data5 = document.getElementById("colorCoded5").textContent;
+  localStorage.setItem("event5", new_data5);
+  var new_data6 = document.getElementById("colorCoded6").textContent;
+  localStorage.setItem("event6", new_data6);
+  var new_data7 = document.getElementById("colorCoded7").textContent;
+  localStorage.setItem("event7", new_data7);
+  var new_data8 = document.getElementById("colorCoded8").textContent;
+  localStorage.setItem("event8", new_data8);
+  var new_data9 = document.getElementById("colorCoded9").textContent;
+  localStorage.setItem("event9", new_data9);
 };
+
+// var new_data1 = document.getElementById("colorCoded1").textContent;
+// var new_data2 = document.getElementById("colorCoded2").textContent;
+// var new_data3 = document.getElementById("colorCoded3").textContent;
+// var new_data4 = document.getElementById("colorCoded4").textContent;
+// var new_data5 = document.getElementById("colorCoded5").textContent;
+// var new_data6 = document.getElementById("colorCoded6").textContent;
+// var new_data7 = document.getElementById("colorCoded7").textContent;
+// var new_data8 = document.getElementById("colorCoded8").textContent;
+// var new_data9 = document.getElementById("colorCoded9").textContent;
+
+// function storeEntry() {
+//   var storeEvents = [new_data1, new_data2, new_data3, new_data4, new_data5, new_data6, new_data7, new_data8, new_data9];
+//   for(i = 0; i < storeEvents.length; i++) {
+//     localStorage.setItem("event1", new_data1);
+//     localStorage.setItem("event2", new_data2);
+//     localStorage.setItem("event3", new_data3);
+//     localStorage.setItem("event4", new_data4);
+//     localStorage.setItem("event5", new_data5);
+//     localStorage.setItem("event6", new_data6);
+//     localStorage.setItem("event7", new_data7);
+//     localStorage.setItem("event8", new_data8);
+//     localStorage.setItem("event9", new_data9);
+//   }
+// };
 
 // function pullEvent() {
 //   var getEntry1 = localStorage.getItem("event1");
