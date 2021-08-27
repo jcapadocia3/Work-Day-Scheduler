@@ -17,12 +17,22 @@ setTime();
 // Time block background color will be determined by past, present, or future timeframes
 var timeNow = new Date().getHours();
 
+// for(let i = 9; i <= 17; i++) {
+//    if (timeNow < i) {
+//       $("#colorCoded1").addClass("future");
+//    } else if (timeNow == i) {
+//       $("#colorCoded1").addClass("present");
+//    } else {
+//       $("#colorCoded1").addClass("past");
+//    }
+// }
+
 function colorTime() {
   if (timeNow < 9) {
     $("#colorCoded1").addClass("future");
  } else if (timeNow == 9) {
     $("#colorCoded1").addClass("present");
- } else if (timeNow > 9) {
+ } else {
     $("#colorCoded1").addClass("past");
  } 
  
@@ -30,7 +40,7 @@ function colorTime() {
     $("#colorCoded2").addClass("future");
  } else if (timeNow == 10) {
     $("#colorCoded2").addClass("present");
- } else if (timeNow > 10) {
+ } else {
     $("#colorCoded2").addClass("past");
  }
 
@@ -38,7 +48,7 @@ function colorTime() {
     $("#colorCoded3").addClass("future");
  } else if (timeNow == 11) {
     $("#colorCoded3").addClass("present");
- } else if (timeNow > 11) {
+ } else {
     $("#colorCoded3").addClass("past");
  }
 
@@ -46,7 +56,7 @@ function colorTime() {
     $("#colorCoded4").addClass("future");
  } else if (timeNow == 12) {
     $("#colorCoded4").addClass("present");
- } else if (timeNow > 12) {
+ } else {
     $("#colorCoded4").addClass("past");
  }
 
@@ -54,7 +64,7 @@ function colorTime() {
     $("#colorCoded5").addClass("future");
  } else if (timeNow == 13) {
     $("#colorCoded5").addClass("present");
- } else if (timeNow > 13) {
+ } else {
     $("#colorCoded5").addClass("past");
  }
 
@@ -62,7 +72,7 @@ function colorTime() {
     $("#colorCoded6").addClass("future");
  } else if (timeNow == 14) {
     $("#colorCoded6").addClass("present");
- } else if (timeNow > 14) {
+ } else {
     $("#colorCoded6").addClass("past");
  }
 
@@ -70,7 +80,7 @@ function colorTime() {
     $("#colorCoded7").addClass("future");
  } else if (timeNow == 15) {
     $("#colorCoded7").addClass("present");
- } else if (timeNow > 15) {
+ } else {
     $("#colorCoded7").addClass("past");
  }
 
@@ -78,7 +88,7 @@ function colorTime() {
     $("#colorCoded8").addClass("future");
  } else if (timeNow == 16) {
     $("#colorCoded8").addClass("present");
- } else if (timeNow > 16) {
+ } else {
     $("#colorCoded8").addClass("past");
  }
 
@@ -86,7 +96,7 @@ function colorTime() {
     $("#colorCoded9").addClass("future");
  } else if (timeNow == 17) {
     $("#colorCoded9").addClass("present");
- } else if (timeNow > 17) {
+ } else {
     $("#colorCoded9").addClass("past");
  }
 };

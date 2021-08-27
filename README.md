@@ -22,6 +22,6 @@ This project is intended to present a user with a scheduler to utilize for his/h
 
 - The user will have the option to click on a corresponding text box next to the hour of day located on the left side of the screen. When a text box is clicked, the user can input an "event/responsibility" that they would have to, presumably, complete by that corresponding hour of day. The user can then click the "save icon" to the right of the text box to ensure their input is saved for reference.
 
-- Text boxes will be color coded based on past, present, or future times and will be updated in real-time. This is an indicator that a user can take advantage of to keep track of responsibilities that are overdue, currently due within the hour, or due by the end of business day.
+- Text boxes will be color coded based on past (gray), present (red), or future (green) times and will be updated in real-time. This is an indicator that a user can take advantage of to keep track of responsibilities that are overdue, currently due within the hour, or due by the end of business day.
 
 - When a user clicks the "save icon" next to a field where input is entered/deleted, the web page will store the data locally to persist should the user choose to close the web page and reload it in the future to reference his/her responsibilities for the day.
