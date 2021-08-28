@@ -16,107 +16,117 @@ setTime();
 // Time block background color will be determined by past, present, or future timeframes
 var timeNow = new Date().getHours();
 
-function colorTime() {
-  if (timeNow < 9) {
-    $("#colorCoded1").addClass("future");
-    console.log("past");
- } else if (timeNow == 9) {
-    $("#colorCoded1").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded1").addClass("past");
-    console.log("future");
- } 
+for(let i = 9; i <= 17; i++) {
+   if (timeNow < i) {
+      $("#colorCoded1").addClass("future");
+   } else if (timeNow == i) {
+      $("#colorCoded1").addClass("present");
+   } else {
+      $("#colorCoded1").addClass("past");
+   }
+}
+
+// function colorTime() {
+//   if (timeNow < 9) {
+//     $("#colorCoded1").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 9) {
+//     $("#colorCoded1").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded1").addClass("past");
+//     console.log("future");
+//  } 
  
- if (timeNow < 10) {
-    $("#colorCoded2").addClass("future");
-    console.log("past");
- } else if (timeNow == 10) {
-    $("#colorCoded2").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded2").addClass("past");
-    console.log("future");
- }
+//  if (timeNow < 10) {
+//     $("#colorCoded2").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 10) {
+//     $("#colorCoded2").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded2").addClass("past");
+//     console.log("future");
+//  }
 
- if (timeNow < 11) {
-    $("#colorCoded3").addClass("future");
-    console.log("past");
- } else if (timeNow == 11) {
-    $("#colorCoded3").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded3").addClass("past");
-    console.log("future");
- }
+//  if (timeNow < 11) {
+//     $("#colorCoded3").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 11) {
+//     $("#colorCoded3").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded3").addClass("past");
+//     console.log("future");
+//  }
 
- if (timeNow < 12) {
-    $("#colorCoded4").addClass("future");
-    console.log("past");
- } else if (timeNow == 12) {
-    $("#colorCoded4").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded4").addClass("past");
-    console.log("future");
- }
+//  if (timeNow < 12) {
+//     $("#colorCoded4").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 12) {
+//     $("#colorCoded4").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded4").addClass("past");
+//     console.log("future");
+//  }
 
- if (timeNow < 13) {
-    $("#colorCoded5").addClass("future");
-    console.log("past");
- } else if (timeNow == 13) {
-    $("#colorCoded5").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded5").addClass("past");
-    console.log("future");
- }
+//  if (timeNow < 13) {
+//     $("#colorCoded5").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 13) {
+//     $("#colorCoded5").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded5").addClass("past");
+//     console.log("future");
+//  }
 
- if (timeNow < 14) {
-    $("#colorCoded6").addClass("future");
-    console.log("past");
- } else if (timeNow == 14) {
-    $("#colorCoded6").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded6").addClass("past");
-    console.log("future");
- }
+//  if (timeNow < 14) {
+//     $("#colorCoded6").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 14) {
+//     $("#colorCoded6").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded6").addClass("past");
+//     console.log("future");
+//  }
 
- if (timeNow < 15) {
-    $("#colorCoded7").addClass("future");
-    console.log("past");
- } else if (timeNow == 15) {
-    $("#colorCoded7").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded7").addClass("past");
-    console.log("future");
- }
+//  if (timeNow < 15) {
+//     $("#colorCoded7").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 15) {
+//     $("#colorCoded7").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded7").addClass("past");
+//     console.log("future");
+//  }
 
- if (timeNow < 16) {
-    $("#colorCoded8").addClass("future");
-    console.log("past");
- } else if (timeNow == 16) {
-    $("#colorCoded8").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded8").addClass("past");
-    console.log("future");
- }
+//  if (timeNow < 16) {
+//     $("#colorCoded8").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 16) {
+//     $("#colorCoded8").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded8").addClass("past");
+//     console.log("future");
+//  }
 
- if (timeNow < 17) {
-    $("#colorCoded9").addClass("future");
-    console.log("past");
- } else if (timeNow == 17) {
-    $("#colorCoded9").addClass("present");
-    console.log("present");
- } else {
-    $("#colorCoded9").addClass("past");
-    console.log("future");
- }
-};
-colorTime()
+//  if (timeNow < 17) {
+//     $("#colorCoded9").addClass("future");
+//     console.log("past");
+//  } else if (timeNow == 17) {
+//     $("#colorCoded9").addClass("present");
+//     console.log("present");
+//  } else {
+//     $("#colorCoded9").addClass("past");
+//     console.log("future");
+//  }
+// };
+// colorTime()
 
 // Begin code to set EventListeners
 // for each form submission to save user entries

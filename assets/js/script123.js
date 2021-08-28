@@ -17,16 +17,6 @@ setTime();
 // Time block background color will be determined by past, present, or future timeframes
 var timeNow = new Date().getHours();
 
-// for(let i = 9; i <= 17; i++) {
-//    if (timeNow < i) {
-//       $("#colorCoded1").addClass("future");
-//    } else if (timeNow == i) {
-//       $("#colorCoded1").addClass("present");
-//    } else {
-//       $("#colorCoded1").addClass("past");
-//    }
-// }
-
 function colorTime() {
   if (timeNow < 9) {
     $("#colorCoded1").addClass("future");
