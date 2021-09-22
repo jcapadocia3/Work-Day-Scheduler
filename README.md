@@ -26,5 +26,5 @@ This project is intended to present a user with a scheduler to utilize for his/h
 
 - When a user clicks the "save icon" next to a field where input is entered/deleted, the web page will store the data locally to persist should the user choose to close the web page and reload it in the future to reference his/her responsibilities for the day.
 
-##License
+## License
 - Licensed under the [MIT License](LICENSE).
