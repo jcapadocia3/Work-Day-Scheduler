@@ -25,3 +25,6 @@ This project is intended to present a user with a scheduler to utilize for his/h
 - Text boxes will be color coded based on past (gray), present (red), or future (green) times and will be updated in real-time. This is an indicator that a user can take advantage of to keep track of responsibilities that are overdue, currently due within the hour, or due by the end of business day.
 
 - When a user clicks the "save icon" next to a field where input is entered/deleted, the web page will store the data locally to persist should the user choose to close the web page and reload it in the future to reference his/her responsibilities for the day.
+
+##License
+- Licensed under the [MIT License](LICENSE).
